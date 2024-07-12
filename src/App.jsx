@@ -39,7 +39,7 @@ function App() {
       <Route path="/location/sede-principal" element={ <Location /> }/>
       <Route path="/usuarios" element={ <Usuarios /> }/>
 
-      <Route path="/usuarios/:nombreDeUsuario" element={ <UserDetails/> }/>
+      <Route path="/usuarios/:idDelUsuario" element={ <UserDetails/> }/>
       {/* //* parametros dinamicos. cajitas donde almacenamos cualquier valor posible del URL */}
 
     </Routes>

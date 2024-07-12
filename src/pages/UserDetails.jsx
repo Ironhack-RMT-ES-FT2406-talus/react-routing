@@ -8,16 +8,16 @@ function UserDetails() {
   console.log(params)
 
   const usuarioConseguido = allUsers.find((eachUser) => {
-    return eachUser.username === params.nombreDeUsuario
+    return eachUser.id === params.idDelUsuario
   })
-  console.log(usuarioConseguido)
+  //console.log(usuarioConseguido)
 
   return (
     <div>
       
       <h3>Detalles de un usuario</h3>
 
-      <p>nombre: {params.nombreDeUsuario}</p>
+      <p>nombre: {usuarioConseguido.username}</p>
       <p>lugar: {usuarioConseguido.city}</p>
       <p>curso: {usuarioConseguido.course}</p>
 
